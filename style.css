@@ -130,7 +130,7 @@
     .faq button .icon {
       top: 40%;
       transform: translateY(-50%);
-      right: 1rem; /* Adjust the position of the icon */
+      right: 1rem;
     }
   }
 
