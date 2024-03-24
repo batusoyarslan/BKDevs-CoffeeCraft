@@ -30,7 +30,7 @@
     width: 280px; 
     height: 283px; 
     margin-right: 10px; 
-    justify-content: center; /* İçeriği yatayda ortala */
+    justify-content: center;
     align-items: center;
     display: flex;
     border-radius: 10px;
@@ -74,12 +74,12 @@
 
 @media screen and (max-width: 768px) {
     .features-container {
-        flex-direction: column; /* Stack squares vertically on smaller screens */
+        flex-direction: column; 
         align-items: center;
     }
 
     .square {
-        width: 80vw; /* Adjust width for smaller screens */
-        height: auto; /* Allow height to adjust based on content */
+        width: 80vw; 
+        height: auto; 
     }
 }
