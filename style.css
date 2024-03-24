@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+ 
+  .banner-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .banner {
+    width: 100%;
+    height: 45vh;
+    background-image: url(images/pexels-bianca-gasparoto-1752806.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+  }
+  .banner-text{
+    color: white;
+    padding: 70px;
+    width: 100%;
+    height: 100%;
+    margin-left: 140px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+
+
+  }
+  .banner-text h1{
+font-weight: 700;
+font-size: 30px;
+
+  
+  }
+  .bn632-hover {
+    width: 140px;
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+   
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn24 {
+    background-image: linear-gradient(
+        to right,
+        #6253e1,
+        #852d91,
+        #a3a1ff,
+        #f24645
+      );
+      box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    }
+
+    @media (max-width: 768px) {
+        .banner-text h1 {
+            font-size: 20px;
+        }
+        .banner-text {
+            padding: 40px;
+            margin-top: 40px;
+            margin-left: 0px;
+            
+        }
+        .banner {
+            width: 100%;
+            height: 45vh;
+        
+          }
+          .bn632-hover {
+            width: 120px;
+            font-size: 12px;
+            margin-top: 20px;
+          }
+    }
+   
