@@ -10,9 +10,8 @@
     min-height: 100vh;
     background-image: url(images/pexels-elle-hughes-2101150.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-      
+    background-size: 1920px 1080px;
+    background-position: top;      
   }
   .clicker-script-regular {
     font-family: "Clicker Script", cursive;
@@ -255,7 +254,87 @@
        display: none;
     }
 }
- 
+
+.features{
+  text-align: center;
+}
+
+.features-header{
+  font-size: 50px;
+  color: #603809;
+}
+
+.features-p{
+  font-size: 20px;
+  margin-top: 10px;
+  color: #707070;
+  flex-wrap: wrap;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 40px;
+}
+
+.square {
+  width: 280px; 
+  height: 283px; 
+  margin-right: 10px; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  background-color: #FFEED8;
+}
+
+.features-h2{
+  font-size: 35px;
+  margin-top: 10px;
+  color: #603809;
+}
+
+.features-bottom-t p{
+  color: #707070;
+}
+
+.features-bottom-t{
+  margin-top: 30px;
+}
+
+.square-text{
+  text-align: center;
+}
+
+.square-text h1{
+margin-top: 20px;
+margin-bottom: 10px;
+font-size: 35px;
+color: #603809;
+}
+
+.square-text p{
+  font-size: 18px;
+  color: #707070;
+}
+
+.square i{
+  font-size: 88px;
+  color: #41280b;
+}
+
+@media screen and (max-width: 768px) {
+  .features-container {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .square {
+      width: 80vw; 
+      height: auto; 
+  }
+}
 
 
 
@@ -477,4 +556,5 @@
 
 }
    */
+>>>>>>> main
 >>>>>>> main
