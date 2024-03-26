@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   
       
   }
   .clicker-script-regular {
@@ -201,6 +200,61 @@
     }
   }
   
+  .discover-section{
+    display: flex;
+    background-color:#4F3314 ;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 180px;
+}
+
+.discover-image,
+.discover-text-area{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover-image img{
+    max-width: 100%;
+}
+
+.discover-p{
+    font-size: 22px;
+    margin: 20px 0px;
+}
+
+.discover-header{
+    font-size: 50px
+}
+
+.discover-text-box{
+    width: 70%;
+    text-align: left;
+}
+
+.discover-button{
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F9C06A;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .discover-text-area {
+        width: 100%; 
+    }
+    .discover-button{
+        margin-bottom: 20px;
+    }
+
+    .discover-image{
+       display: none;
+    }
+}
  
 
 
@@ -423,3 +477,4 @@
 
 }
    */
+>>>>>>> main
