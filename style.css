@@ -1,9 +1,340 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    background-image: url(images/pexels-elle-hughes-2101150.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-position: top;      
+  }
+  .clicker-script-regular {
+    font-family: "Clicker Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    z-index: -1;
+  }
+  .logo {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .navbar a {
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    margin-right: 40px;
+  }
+  #check {
+    display: none;
+  }
+  .icons {
+    position: absolute;
+    font-size: 2.5rem;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  .bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn18 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  }
+  
+  .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+     margin-top: 350px;
+     margin-left: 50px;
+  }
+  
+  .content h1 {
+      font-size: 130px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 30px;
+    font-family: "Clicker Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+      
+  }
+  .content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    
+    
+}
+  
+  @media (max-width: 992px) {
+    .header {
+      padding: 1.3rem 5%;
+    }
+    .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+       margin-top: 250px;
+       margin-left: 50px;
+    }
+  }
+  @media (max-width: 768px) {
+    .icons {
+      display: inline-flex;
+    }
+  
+    #check:checked ~.icons #menu-icon {
+      display: none;
+    }
+    .icons #close-icon {
+      display: none;
+    }
+    #check:checked ~.icons #close-icon {
+      display: block;
+    }
+   
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background: rgba(0, 0, 0, 0.1);
+      /* backdrop-filter: blur(30px); */
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      transition: 0.5s ease;
+      overflow: hidden;
+    
+    }
+  
+    #check:checked ~ .navbar {
+      height: 13.5rem;
+      z-index: 13;
+    }
+  
+    .navbar a {
+      display: block;
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+      text-align: center;
+      transform: translateY(-10px);
+      transition: 0.5s ease;
+    }
+    #check:checked ~ .navbar a {
+      transform:translateY(0);
+    }
+    .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+       margin-top: 230px;
+       margin-left: 50px;
+    }
+  }
+  
+  .discover-section{
+    display: flex;
+    background-color:#4F3314 ;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 180px;
 }
 
+.discover-image,
+.discover-text-area{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover-image img{
+    max-width: 100%;
+}
+
+.discover-p{
+    font-size: 22px;
+    margin: 20px 0px;
+}
+
+.discover-header{
+    font-size: 50px
+}
+
+.discover-text-box{
+    width: 70%;
+    text-align: left;
+}
+
+.discover-button{
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F9C06A;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .discover-text-area {
+        width: 100%; 
+    }
+    .discover-button{
+        margin-bottom: 20px;
+    }
+
+    .discover-image{
+       display: none;
+    }
+}
+
+.features{
+  text-align: center;
+}
+
+.features-header{
+  font-size: 50px;
+  color: #603809;
+}
+
+.features-p{
+  font-size: 20px;
+  margin-top: 10px;
+  color: #707070;
+  flex-wrap: wrap;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 40px;
+}
+
+.square {
+  width: 280px; 
+  height: 283px; 
+  margin-right: 10px; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  background-color: #FFEED8;
+}
+
+.features-h2{
+  font-size: 35px;
+  margin-top: 10px;
+  color: #603809;
+}
+
+.features-bottom-t p{
+  color: #707070;
+}
+
+.features-bottom-t{
+  margin-top: 30px;
+}
+
+.square-text{
+  text-align: center;
+}
+
+.square-text h1{
+margin-top: 20px;
+margin-bottom: 10px;
+font-size: 35px;
+color: #603809;
+}
+
+.square-text p{
+  font-size: 18px;
+  color: #707070;
+}
+
+.square i{
+  font-size: 88px;
+  color: #41280b;
+}
+
+@media screen and (max-width: 768px) {
+  .features-container {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .square {
+      width: 80vw; 
+      height: auto; 
+  }
+}
 
 .container {
   margin: 0 auto;
